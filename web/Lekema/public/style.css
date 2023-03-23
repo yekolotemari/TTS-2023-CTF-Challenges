@@ -1,0 +1,73 @@
+html body img {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+  background-attachment: fixed;
+  background-size: auto;
+  
+  
+  @keyframes atoms {
+    0% {
+      background-color: #121212;
+    }
+    50% {
+      background-color: #FF2D55;
+    }
+    100% {
+      background-color: #121212;
+    }
+  }}
+  
+  .search-container {
+    text-align: center;
+    margin: 5% 1%;
+    margin-top: 10%;
+  }
+  
+  form input[type="text"] {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+  }
+  
+  form button[type="submit"] {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: #FF2D55;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #121212;
+    animation: atoms 5s infinite;
+  }
+  
+  .content-container {
+    margin:10% 40%;
+    align-items: center;
+    
+  }
+  .content-container code {
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 300;
+    color: #FF2D55;
+    
+  }
+  h3 {
+    margin-top: 100px;
+    margin-left: 25%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: #70b991;
+    
+  }
+  

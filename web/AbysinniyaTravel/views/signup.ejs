@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+
+        <h1>አቢሲኒያ Signup</h1>
+        <form method="POST" action="/signup">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <div id="res"> 
+            <% if(msg && msg[0] === 'S') { %>
+                <code style="color:green"> <%= msg %> </code>
+            <% } else if (msg && msg[0] === 'U'){ %>
+                <code style="color:red"><%= msg %></code>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
